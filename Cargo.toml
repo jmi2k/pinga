@@ -1,0 +1,27 @@
+[package]
+name = "pinga"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+dns-lookup = "2.0"
+eframe = "0.24"
+egui_extras = "0.24"
+egui_plot = "0.24"
+itertools = "0.12"
+surge-ping = "0.8"
+
+[dependencies.egui]
+version = "0.24"
+features = [ "persistence" ]
+
+[dependencies.tokio]
+version = "1.35"
+features = [ "full" ]
+
+[dependencies.serde]
+version = "1.0"
+features = [ "derive" ]
